@@ -257,6 +257,13 @@ img{
         font-size: 12px;     
        
     }
+	img{
+        height: 300px;
+        width: 100%;
+    }
+    .popup{
+        width: 340px;
+    }
 }
 @media (max-width: 375px) {
     .Home{
