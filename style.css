@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
 }
+
 .Home{
     background-image: linear-gradient(#0F0F0F,#001524);
     height: 100vh;
@@ -80,28 +81,27 @@ img{
     
 }
 .red{
-    height: 50px;
-    width: 50px;
-    border: 5px solid black;
+    height: 10px;
+    width: 10px;
     border-radius: 50%;
-    background-color: #FF8080;
+    background-color: white;
     cursor: pointer;
 }
 .orange{
     margin: 0px 5px 0px 5px;
-    height: 50px;
-    width: 50px;
-    border: 5px solid black;
+    height: 7px;
+    width: 7px;
+    
     border-radius: 50%;
-    background-color: #FF914D;
+    background-color: white;
     cursor: pointer;
 }
 .green{
-    height: 50px;
-    width: 50px;
-    border: 5px solid black;
+    height: 5px;
+    width: 5px;
+    
     border-radius: 50%;
-    background-color: #00BF63;
+    background-color: white;
     cursor: pointer;
 }
 /*popup Contact us*/
@@ -255,9 +255,11 @@ img{
         height: 40px;
         width: 100px;  
         font-size: 12px;     
-       
     }
-	img{
+    .oval{
+        width: 20rem;
+    }
+    img{
         height: 300px;
         width: 100%;
     }
@@ -300,7 +302,60 @@ img{
         margin-top: 20px;
         height: 40px;
         width: 100px;  
-        font-size: 15px;     
+        font-size: 10px;     
        
+    }
+}
+
+.theme-toggler{
+    position: fixed;
+    top:10rem; right:-20rem;
+    background: #333;
+    z-index: 1000;
+    width: 20rem;
+    text-align: center;
+}
+
+.theme-toggler.active{
+    right:0;
+}
+
+.theme-toggler h3{
+    color:#fff;
+    padding:1rem 0;
+    font-size: 2rem;
+}
+
+.theme-toggler .buttons{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap:1rem;
+    padding:1rem;
+}
+
+.theme-toggler .buttons .theme-btn{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.theme-toggler .toggle-btn{
+    position: absolute;
+    top:0; left:-5.9rem;
+    padding:0.5rem 1rem;
+    cursor: pointer;
+}
+
+.theme-toggler .toggle-btn .i{
+    color:#fff;
+    font-size: 3rem;
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(360deg);
     }
 }
