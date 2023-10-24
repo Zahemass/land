@@ -5,7 +5,7 @@
     padding: 0;
     margin: 0;
 }
-
+::-webkit-scrollbar { display: none; }
 .Home{
     background-image: linear-gradient(#0F0F0F,#001524);
     padding: 20px;
@@ -72,7 +72,7 @@ span{
     padding-bottom: 20px;
 }
 img{
-    
+    height: 400px;
     width: 100%;
     margin-bottom: 15px;
 }
@@ -254,10 +254,25 @@ img{
     .popup{
         width: 300px;
     }
-}
-
-@media (max-width:330px){
-    .popup{
-        width: 280px;
+    img{
+        height: 250px;
     }
 }
+@media (max-width:370px){
+    .popup{
+        width: 300px;
+    }
+    img{
+        height: 200px;
+    }
+}
+@media (max-width:330px){
+    .popup{
+        width: 260px;
+    }
+}
+
+
+
+
+
