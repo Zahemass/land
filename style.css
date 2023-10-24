@@ -8,8 +8,7 @@
 
 .Home{
     background-image: linear-gradient(#0F0F0F,#001524);
-    height: 100vh;
-    width: 100%;
+    padding: 20px;
 }
 .circle{
     height: 100px;
@@ -19,12 +18,9 @@
     color: #EFEFEF;
     font-size: 34px;
     font-family: 'Roboto', sans-serif;
-    padding-top: 30px ;
+    padding-top: 25px ;
     text-align: center;
     align-items: center;
-    position: relative;
-    top: 70px;
-    left: 100px;
 }
 .container{
     display: flex;
@@ -36,20 +32,27 @@
     font-size: 42px;
     margin-left: 100px;
 }
+.Title{
+    padding: 100px;
+}
+h1{
+    color: white;
+	line-height: 1.5;
+}
 .btn{
     background-color: transparent;
     color: whitesmoke;
     border: 2px solid white;
     height: 50px;
     width: 150px;
-    margin: 15px;
-    margin-top: 60px;
     border-radius: 15px;
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     transition: all 0.2s;
     cursor: pointer;
+    margin: 10px;
 }
+
 .btn:hover{
     border: 2px solid #F6E8C0;
     color:#F6E8C0;
@@ -64,12 +67,12 @@ span{
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    width: 45%;
+    
     border-radius:  34% 64% 7% 2% / 73% 54% 4% 19%;
     padding-bottom: 20px;
 }
 img{
-    height: 400px;
+    
     width: 100%;
     margin-bottom: 15px;
 }
@@ -195,119 +198,7 @@ img{
 	color: #ef8172;
 	margin-bottom: 1rem;
 }
-
-
-@media (max-width: 1440px) {
-    .oval{
-       margin-top: 100px;
-        
-        width: 45%;
-        height: 24rem;
-        
-    }
-    
-    .para{
-        font-size: 32px;
-        margin-top: 100px;
-    }
-  }
-  @media (max-width: 1440px) {
-   
-    
-}   
-@media (max-width: 1000px) {
-    .Home{
-        height: 200vh;
-    }
-    .container{
-        flex-direction: column;
-    }
-    .para{
-        font-size: 42px;
-        
-    }
-    
-   
-}
-@media (max-width: 768px) {
-   
-}
-@media (max-width: 600px) {
-    
-    .para{
-        font-size: 32px;
-        
-    }
-}
-@media (max-width: 425px) {
-    .Home{
-        height: 140vh;
-    }
-    
-    .para{
-        font-size: 20px;
-        margin-left: 0;
-    }
-    
-    .btn{
-        
-        margin-top: 20px;
-        height: 40px;
-        width: 100px;  
-        font-size: 12px;     
-    }
-    .oval{
-        width: 20rem;
-    }
-    img{
-        height: 300px;
-        width: 100%;
-    }
-    .popup{
-        width: 340px;
-    }
-}
-@media (max-width: 375px) {
-    .Home{
-        height: 140vh;
-    }
-    
-    .para{
-        font-size: 20px;
-        margin-left: 0;
-    }
-    
-    
-    .btn{
-        
-        margin-top: 20px;
-        height: 40px;
-        width: 100px;  
-        font-size: 15px;     
-       
-    }
-}
-@media (max-width: 320px) {
-    .Home{
-        height: 140vh;
-    }
-    
-    .para{
-        font-size: 20px;
-        margin-left: 0;
-    }
-   
-    .btn{
-        
-        margin-top: 20px;
-        height: 40px;
-        width: 100px;  
-        font-size: 10px;     
-       
-    }
-}
-
-.theme-toggler{
+theme-toggler{
     position: fixed;
     top:10rem; right:-20rem;
     background: #333;
@@ -357,5 +248,16 @@ img{
 @keyframes spin {
     0%{
         transform: rotate(360deg);
+    }
+}
+@media (max-width:500px){
+    .popup{
+        width: 300px;
+    }
+}
+
+@media (max-width:330px){
+    .popup{
+        width: 280px;
     }
 }
