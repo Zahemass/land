@@ -1,27 +1,40 @@
-function change(color){
-    let font = document.getElementById("color");
-    let background_color =  document.getElementById("bgcolor");
-    let icon_col_1 = document.getElementById('icon-1')
-    let icon_col_2 = document.getElementById('icon-2')
-    let icon_col_3 = document.getElementById('icon-3')
+var font = document.getElementById("color");
+var background_color =  document.getElementById("bgcolor");
+var red = document.querySelector(".red");
+var orange = document.querySelector(".orange");
+var green = document.querySelector(".green");
+
+function change(color,x = 0, y =0, z = 0){
     font.style.color = color;
+    red.style.height = x;
+    red.style.width = x;
+    orange.style.height = y;
+    orange.style.width = y;
+    green.style.height = z;
+    green.style.width = z;
     background_color.style.backgroundColor = color;
+
+    let icon_col_1 = document.getElementById('icon-1');
+    let icon_col_2 = document.getElementById('icon-2');
+    let icon_col_3 = document.getElementById('icon-3');
     icon_col_1.style.color = color;
     icon_col_2.style.color = color;
     icon_col_3.style.color = color;
     
 }
 
+var first_image = document.querySelector(".first-image")
+var second_image = document.querySelector(".second-image")
+var third_image = document.querySelector(".third-image")
 
-
-document.querySelector(".first-image").addEventListener("click", function(){
+first_image.addEventListener("click", function(){
     document.getElementById("imageid").src = "images/purple.png"
 })
 
-document.querySelector(".second-image").addEventListener("click", function(){
+second_image.addEventListener("click", function(){
     document.getElementById("imageid").src = "images/orange.png"
 })
-document.querySelector(".third-image").addEventListener("click", function(){
+third_image.addEventListener("click", function(){
     document.getElementById("imageid").src = "images/green.png"
 })
 document.querySelector("#first-image").addEventListener("click", function(){
