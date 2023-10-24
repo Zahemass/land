@@ -198,7 +198,7 @@ img{
 	color: #ef8172;
 	margin-bottom: 1rem;
 }
-theme-toggler{
+.theme-toggler{
     position: fixed;
     top:10rem; right:-20rem;
     background: #333;
